@@ -1,0 +1,25 @@
+{
+  "api": {
+    "name": "ForegroundPlugin",
+    "slug": "foregroundplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "bringToForeground",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "bringtoforeground"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}

@@ -1,10 +1,8 @@
+
 import { registerPlugin } from '@capacitor/core';
+import type { ForegroundPlugin as ForegroundPluginType} from './definitions';
 
-import type { ForegroundPluginPlugin } from './definitions';
-
-const ForegroundPlugin = registerPlugin<ForegroundPluginPlugin>('ForegroundPlugin', {
-  web: () => import('./web').then((m) => new m.ForegroundPluginWeb()),
-});
+const ForegroundPlugin = registerPlugin<ForegroundPluginType>('ForegroundPlugin'); // Register the plugin instance
 
 export * from './definitions';
-export { ForegroundPlugin };
+export { ForegroundPlugin }; // Export the runtime plugin instance

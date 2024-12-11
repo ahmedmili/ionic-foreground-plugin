@@ -1,3 +1,3 @@
-export interface ForegroundPluginPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+export interface ForegroundPlugin {
+  bringToForeground(): Promise<void>;
 }
